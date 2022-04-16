@@ -1,0 +1,25 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+  
+  #container {
+    display: grid;
+    /* grid-gap: 1em; */
+    border: 1px solid black;
+    height: 500px;
+    width: 500px;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+  }
+  
+  .grid-cell {
+    /* padding: 1em; */
+    border: 1px solid black;
+    text-align: center;
+  }
+
+  /* .grid-cell:active {
+      background-color: black;
+      transition: ease 0.5s all;
+  } */
